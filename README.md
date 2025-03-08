@@ -7,7 +7,7 @@ git clone https://github.com/MariiaKamenska/react-template.git new-project
 cd new-project
 ```
 ```bash
-rm -rf.git  # Видаляємо старий Git-зв'язок
+rm -rf .git  # Видаляємо старий Git-зв'язок
 ```
 ```bash
 git init
