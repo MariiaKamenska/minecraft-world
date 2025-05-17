@@ -19,7 +19,7 @@ export default function Ground({ onAddBlock }) {
                             receiveShadow
                         >
                             <boxGeometry args={[1, 1, 1]} />
-                            <meshStandardMaterial color="green" />
+                            <meshStandardMaterial color="#7CFC00" />
                         </mesh>
                     );
                 })

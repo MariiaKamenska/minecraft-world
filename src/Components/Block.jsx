@@ -1,4 +1,4 @@
-export default function Block({ position, onClick }) {
+export default function Block({ position, onClick, onRemove }) {
 
     return (
         <mesh
@@ -7,11 +7,15 @@ export default function Block({ position, onClick }) {
                 e.stopPropagation();
                 onClick(position);
             }}
+            onContextMenu={(e) => {
+                e.stopPropagation();
+                onRemove(position);
+            }}
             castShadow
             receiveShadow
         >
             <boxGeometry args={[1, 1, 1]} />
-            <meshStandardMaterial color="lightgreen" />
+            <meshStandardMaterial color="#32CD32" />
          </mesh>
     );
 }
